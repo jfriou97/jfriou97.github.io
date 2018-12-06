@@ -3,12 +3,11 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 .topnav {
-    height: 6em;
+    height: 100%;
     display: block;
     background-color: #CCCCCC;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 3%
 }
 
 .topnav li a {
@@ -23,6 +22,11 @@ body {
 .topnav a:hover {
   color: black;
 }
+
+.topnav a.current {
+    color: black;
+}
+
 
 .topnav li {
     display: inline-block;
@@ -92,29 +96,29 @@ body {
 .grid-container {
     display: grid;
     color: #626262;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr auto;
-    grid-gap: .8em;
-    padding: 1em 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+    padding: 2%
 }
 
-
+.right img {
+    width: 100%;
+}
 
 .left {
     display: grid;
     align-self: flex-start;
-    width: 45%;
+    width: 100%;
      text-align: center;
-    margin-top: 1em;
 }
+
 .right {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     position: relative;
-    align-self: flex-end;
-    width: 45%;
-    grid-gap: .8em;
-    margin-top: 1em;
+    width: 100%;
+    grid-gap: 3%;
 }
 
 .bottom-right:hover {
@@ -298,6 +302,12 @@ article a {
     border-color: #CCCCCC;
 }
 
+.box {
+   overflow: hidden;
+    padding: 4%;
+    align-content: center;
+}
+
 .floated-box {
     float: left;
     width: 150px;
@@ -316,9 +326,6 @@ article a {
     color: white;
 }
 
-.box {
-    overflow:hidden;
-}
 
 
 .wrapper {
@@ -347,6 +354,5 @@ article a {
 
 .tres {
     padding-left: 10%
-
-        
+}
 
